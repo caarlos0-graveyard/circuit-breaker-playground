@@ -11,7 +11,9 @@ public class ApiResource {
     @POST
     @Produces(MediaType.TEXT_PLAIN)
     @Path("/{number}")
-    public int calc(@PathParam("number") final int number) {
+    public int calc(@PathParam("number") final int number) throws InterruptedException {
+        if (System.currentTimeMillis() % 5 == 0)
+            Thread.sleep(1000L);
         return number * 20;
     }
 }
