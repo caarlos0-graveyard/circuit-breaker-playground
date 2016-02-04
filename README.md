@@ -12,3 +12,5 @@ Two deployables:
 The `app` calls the `api`through Hystrix. And that's it.
 
 Right now I'm playing with fallback and caching only. Nothing fancy.
+
+> Tested on Wildfly 10
