@@ -6,7 +6,7 @@ import java.util.Date;
 
 public final class DateCommand extends HystrixCommand<Date> {
     public DateCommand() {
-        super(HystrixCommandGroupKey.Factory.asKey("API"));
+        super(HystrixCommandGroupKey.Factory.asKey("Date"));
     }
 
     @Override
