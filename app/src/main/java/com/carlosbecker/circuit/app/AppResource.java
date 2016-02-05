@@ -1,4 +1,4 @@
-package com.carlosbecker.circuit.api;
+package com.carlosbecker.circuit.app;
 
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;

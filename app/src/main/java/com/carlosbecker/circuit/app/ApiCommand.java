@@ -1,4 +1,4 @@
-package com.carlosbecker.circuit.api;
+package com.carlosbecker.circuit.app;
 
 import com.jcabi.http.Request;
 import com.jcabi.http.request.JdkRequest;
@@ -15,7 +15,7 @@ public final class ApiCommand extends HystrixCommand<Integer> {
 
     @Override
     protected Integer run() throws Exception {
-        final String result = new JdkRequest("http://localhost:8080/api")
+        final String result = new JdkRequest("http://localhost:8080/app")
             .uri().path("/calc").path(String.format("/%d", this.number)).back()
             .method(Request.POST)
             .fetch()

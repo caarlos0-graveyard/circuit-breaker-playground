@@ -1,4 +1,4 @@
-package com.carlosbecker.circuit.api;
+package com.carlosbecker.circuit.app;
 
 import java.util.Date;
 import javax.ws.rs.GET;
