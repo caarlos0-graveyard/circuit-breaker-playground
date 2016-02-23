@@ -23,4 +23,6 @@ But, in the so called "real world", I would need to monitor streams for several 
 not just only one.
 
 To do that, apparently I should use Netflix/Turbine, which has also AWS server discovery
-(that's great) - so, this might solve that problem :)
+based on Eureka.
+
+Also useful: https://github.com/ContaAzul/turbine-ec2
