@@ -36,7 +36,7 @@
             <dependency>
               <groupId>org.wildfly.swarm</groupId>
               <artifactId>jaxrs</artifactId>
-              <version>1.0.0.Alpha7</version>
+              <version>1.0.0.Alpha8</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -50,22 +50,20 @@
                         <failOnMissingWebXml>false</failOnMissingWebXml>
                     </configuration>
                 </plugin>
+                <plugin>
+                    <groupId>org.wildfly.swarm</groupId>
+                    <artifactId>wildfly-swarm-plugin</artifactId>
+                    <version>1.0.0.Alpha8</version>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>package</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
             </plugins>
         </pluginManagement>
-        <plugins>
-          <plugin>
-            <groupId>org.wildfly.swarm</groupId>
-            <artifactId>wildfly-swarm-plugin</artifactId>
-            <version>1.0.0.Alpha8</version>
-            <executions>
-              <execution>
-                <goals>
-                  <goal>package</goal>
-                </goals>
-              </execution>
-            </executions>
-          </plugin>
-        </plugins>
     </build>
     <modules>
         <module>api</module>
