@@ -33,6 +33,10 @@
                 <artifactId>jcabi-http</artifactId>
                 <version>1.14.2</version>
             </dependency>
+            <dependency>
+              <groupId>org.wildfly.swarm</groupId>
+              <artifactId>jaxrs</artifactId>
+            </dependency>
         </dependencies>
     </dependencyManagement>
     <build>
@@ -47,6 +51,20 @@
                 </plugin>
             </plugins>
         </pluginManagement>
+        <plugins>
+          <plugin>
+            <groupId>org.wildfly.swarm</groupId>
+            <artifactId>wildfly-swarm-plugin</artifactId>
+            <version>1.0.0.Alpha8</version>
+            <executions>
+              <execution>
+                <goals>
+                  <goal>package</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
     </build>
     <modules>
         <module>api</module>
